@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Eventopia</string>
+    <string name="navigation_drawer_open">Drawer Aç</string>
+    <string name="navigation_drawer_close">Drawer Kapat</string>
+    <string name="event_image_desc">Event Image</string>
+    <string name="event_map_desc">Event location map</string>
+
+
+    <string-array name="cities_array">
+        <item>İl seçiniz</item>
+        <item>İstanbul</item>
+        <item>Ankara</item>
+        <item>İzmir</item>
+    </string-array>
+    <string-array name="istanbul_districts">
+        <item>İlçe seçiniz</item>
+        <item>Adalar</item>
+        <item>Arnavutköy</item>
+        <item>Ataşehir</item>
+        <item>Avcılar</item>
+        <item>Bağcılar</item>
+        <item>Bahçelievler</item>
+        <item>Bakırköy</item>
+        <item>Başakşehir</item>
+        <item>Bayrampaşa</item>
+        <item>Beşiktaş</item>
+        <item>Beykoz</item>
+        <item>Beylikdüzü</item>
+        <item>Beyoğlu</item>
+        <item>Büyükçekmece</item>
+        <item>Çekmeköy</item>
+        <item>Esenler</item>
+        <item>Esenyurt</item>
+        <item>Eyüpsultan</item>
+        <item>Fatih</item>
+        <item>Gaziosmanpaşa</item>
+        <item>Güngören</item>
+        <item>Kadıköy</item>
+        <item>Kağıthane</item>
+        <item>Kartal</item>
+        <item>Küçükçekmece</item>
+        <item>Maltepe</item>
+        <item>Pendik</item>
+        <item>Sancaktepe</item>
+        <item>Sarıyer</item>
+        <item>Silivri</item>
+        <item>Sultanbeyli</item>
+        <item>Sultangazi</item>
+        <item>Şile</item>
+        <item>Şişli</item>
+        <item>Tuzla</item>
+        <item>Ümraniye</item>
+        <item>Üsküdar</item>
+        <item>Zeytinburnu</item>
+    </string-array>
+    <string-array name="event_types">
+        <item>Etkinlik Türü</item>
+        <item>Konser</item>
+        <item>Sanat</item>
+        <item>Teknoloji</item>
+        <item>Spor</item>
+        <item>Eğitim</item>
+        <item>Gastronomi</item>
+    </string-array>
+    <string-array name="payment_types">
+        <item>Ücret Türü</item>
+        <item>Ücretli</item>
+        <item>Ücretsiz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eventlisting">
+
+    <!-- Gerekli İzinler -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventListing"
+        android:requestLegacyExternalStorage="true">
+
+
+        <!-- Google Maps API Anahtarı -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCAAm0WqKQVUV8487mVyhiyIyZQe9it1Y0" />
+
+        <!-- Ana Aktivite -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Etkinlik Detay Aktivitesi -->
+        <activity
+            android:name=".EventDetailActivity"
+            android:exported="false" />
+
+        <!-- Giriş Aktivitesi -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Üye Ol Aktivitesi -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" /> <!-- SignUpActivity eklendi -->
+
+        <!-- Etkinlik Ekleme Aktivitesi -->
+        <activity
+            android:name=".EventAddActivity"
+            android:exported="false" />
+
+        <!-- Yakınımdaki Etkinlikler Aktivitesi -->
+        <activity
+            android:name=".NearbyEventsActivity"
+            android:exported="true" />
+        <activity android:name=".MyEventsActivity" />
+        <activity android:name=".LoginPromptActivity" />
+
+    </application>
+
+</manifest>

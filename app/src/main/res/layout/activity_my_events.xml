@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3ED"
+    android:padding="16dp">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/myEventsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Etkinliklerim"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Ortak Alan: Recycler, Uyarı, Boş Liste -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Etkinlik Listesi -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <!-- Giriş Uyarısı -->
+        <LinearLayout
+            android:id="@+id/loginWarningLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/warningText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etkinliklerinizi görmek için lütfen giriş yapın."
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/loginRedirectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giriş Yap"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="14sp"
+                android:elevation="4dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Boş Etkinlik Mesajı ve Butonu -->
+        <LinearLayout
+            android:id="@+id/emptyEventLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/emptyEventText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Henüz bir etkinlik oluşturmadınız."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/addEventFromMyEventsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etkinlik Ekleyin"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F57C00"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="14sp"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

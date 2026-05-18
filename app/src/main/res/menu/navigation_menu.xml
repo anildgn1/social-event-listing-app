@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_login"
+        android:title="Giriş Yap" />
+    <item
+        android:id="@+id/nav_add_event"
+        android:title="Etkinlik Ekle" />
+    <item
+        android:id="@+id/nav_nearby_events"
+        android:title="Yakınımdaki Etkinlikler" />
+    <item
+        android:id="@+id/nav_my_events"
+        android:title="Etkinliklerim" />
+
+</menu>
