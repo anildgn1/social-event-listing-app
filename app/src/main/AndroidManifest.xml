@@ -24,7 +24,7 @@
         <!-- Google Maps API Anahtarı -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCAAm0WqKQVUV8487mVyhiyIyZQe9it1Y0" />
+            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
 
         <!-- Ana Aktivite -->
         <activity
